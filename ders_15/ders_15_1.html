@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMLAR VE FORM OLAYLARI</title>
+    <script>
+        function arttir(x);{document.getElementById("metre").value+=5;}
+    </script>
+</head>
+<body>
+    <meter max="100" min="0" value="40" id="metre" style="border: 3px ridge gold; background-color: honeydew;"></meter>
+    <button type="button" onclick="arttir(x);">ARTTIR</button>
+    <br>
+    <progress value="50" max="100"></progress>
+    <form>
+        <label>Cinsiyet Seçiniz</label><br>
+        <input type="radio" name="cins" value="erkek">ERKEK</input>
+        <input type="radio" name="cins" value="kadin">KADIN</input><br>
+        <label>Hobi Seçiniz</label><br>
+        <input type="checkbox" name="hobi" value="yuzme">Yüzme</input>
+        <input type="checkbox" name="hobi" value="kosma">Koşma></map></input>
+        <input type="checkbox" name="hobi" value="kitap">Kitap</input>
+        <input type="checkbox" name="hobi" value="Spor">Spor</input>
+        <br>
+        <label>Yaş Aralığını seçiniz</label>
+        <br>
+        <input type="number" min="18" max="55"></input> <br>
+        <br>
+        <label>Yaş Seçiniz</label>
+        <br>
+    </form>
+    <form oninput="cikti.value=deger.value">
+        <input type="range" min="18" max="55" value="18" name="deger"></input>
+        <input type="output" name="cikti" value="18"></input>
+    
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar ve Form Girişleri 1</title>
+</head>
+<body>
+    <!--bu dersimizde input ve textarea etiketleri ile veri girişi yapılabilmesini işleyeceğiz.-->
+    <label><h2><b>Formlar ve Form Girişleri Ders 1</b></h2></label>
+    <!--label etiketi P etiketi benzeeridir.Başlık yazman için kullanılır.-->
+    <input type="text" name="ss" value="Tek Satırlı Veri Girişi" style="background-color: blue; font-size: 35px; font-style: italic; color: cornsilk; ">
+    <!-- input etiketi tek satırlı veri girişi için kullanılır style etiketi ile şekillendirilebilir-->
+    <!-- type=text veri girişinin metin oldugunu bildirir-->
+    <!--value değeri kutucuk içinde metin bilgisiy yazmak için bulunur-->
+    <!-- name etiketi ile sayfada kullanacagimiz birden fazla input yada textarea etiketinin ayrılması için kullanılır-->
+    <br><br>
+    <textarea type="text" name="ss2" style="color: cyan; background-color: gray; width: 410px; height: 50px;" >Şikayetinizi giriniz.</textarea>
+    <!--çok satırlı veri girişi yapılablmesini sağlar style etiketi ile şekillendirilebilir--><br>
+    <textarea name="ss3" type="text" autofocus style="border: 10px ridge blue; width: 390px;">imleç her zaman bu kutucukta olacak</textarea>
+    <!--autofocus ozelliği ilgili textarea yada inputu seçili hale getirir.--><br>
+    <textarea name="ss4" type="text" disabled value="pasif" style="text-align: center; width: 410px;">pasif kutucuk</textarea><br>
+    <!--disabled yazılan kutucuk deaktif olur-->
+    <textarea type="text" name="ss5" style="width: 410px;"  maxlength="8"  >8 karekterle sınırlandırılmıştır.</textarea><br>
+    <textarea type="text" name="ss6" required style="width: 410px;" value="isim soyisim">ZORUNLU DOLDURULMASI GEREKİR.</textarea>
+<br>  
+    <textarea placeholder="dilek kutusu" style="width: 410px;"></textarea>
+</body>
+</html>

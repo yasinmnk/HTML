@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: 400px; background-color: gray; border: 4px ridge gold;">
+        <!--fieldset etiketi ile form elemanları gruplandırmak içim kullanılır-->
+        <legend style="border: 3px solid gold; background-color: honeydew; font-family: Verdana, Geneva, Tahoma, sans-serif;">Dilek Şikayet Kutusu</legend>
+        <!--legend elementi ile fieldset ile gruplandırdığımız forma isim verilebilir-->
+        <form action="mailgonder.php" method="POST">
+         <!-- form etiketi ile artık verilerimizi bir form şeklinde gönderileceğini belirtir.-->
+         <!-- action ozelliği butona tıklandıgında nasıl etkileşime gireceğini belirtir-->
+         <!-- method etiketi işlemin nasıl yapılacagını soyler -->
+        <input type="text" placeholder="isminiz"></input> <br><br>
+        <input type="text" placeholder="soyisminiz"></input> <br><br>
+        <textarea type="text" placeholder="şikayetinizi giriniz"></textarea><br><br>
+        <button type="reset" value="reset">SIFIRLA</button>
+        <!-- type=reset ile butona tıklandıgında reset sayfada sıfırlama işleminin bilgisini verir-->
+        <button type="submit" value="submit">GÖNDER</button>
+    </form>
+</fieldset>
+</body>
+</html>

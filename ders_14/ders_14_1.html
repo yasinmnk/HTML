@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMLAR VE FORM OLAYLARI</title>
+
+    <script>
+        Function aktifyap{document.getElementById("buton").disabled=false;}
+        Function pasifyap(x);{document.getElementById("buton").disabled=true;}
+    </script>
+<!-- bu kısım java script kısmında detaylı anlatılacak html dersleri ile ilgili değil-->
+</head>
+<body>
+    <button type="button" id="buton"> AKTİF/PASİF</button>
+    <!--button etiketi ile butonumuzu oluşturduk id verdik daha sonradan kullanabilmemiz için iki buton etiketi arasında yazdıgımız ifadede butonun uzerine yazar-->
+    <button type="button " onclick="aktifyap();">AKTİF YAP</button>
+    <!-- onclick ifadesi tıkladığında anlanını taşır yukarıda yazdıgımız fonksşyonu çalıştırması için kullanılır.-->
+    <button type="button " onclick="pasifyap();">PASİF YAP</button>
+    
+</body>
+</html>
